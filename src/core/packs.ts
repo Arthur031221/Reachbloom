@@ -1,0 +1,32 @@
+export const packs = [
+  {
+    id: "sf-bart",
+    name: "Bay Area · BART",
+    file: "bart.zip",
+    date: "2026-08-24",
+    time: "08:00",
+    origin: [-122.4167, 37.7764] as [number, number],
+    zoom: 11.7,
+    url: "https://www.bart.gov/schedules/developers/gtfs",
+  },
+  {
+    id: "maywood",
+    name: "Maywood · Express Shuttle",
+    file: "maywood.zip",
+    date: "2026-10-12",
+    time: "08:00",
+    origin: [-118.198394, 33.988338] as [number, number],
+    zoom: 14,
+    url: "https://gtfs.dds.dot.ca.gov/",
+  },
+  {
+    id: "yurok",
+    name: "Klamath · River Otter Ferry",
+    file: "yurok.zip",
+    date: "2026-10-12",
+    time: "08:30",
+    origin: [-124.049903, 41.538536] as [number, number],
+    zoom: 11,
+    url: "https://gtfs.dds.dot.ca.gov/",
+  },
+];

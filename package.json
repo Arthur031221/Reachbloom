@@ -1,0 +1,63 @@
+{
+  "name": "reachbloom",
+  "version": "1.0.0",
+  "description": "Explore scheduled transit reach on a map",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b --pretty false",
+    "demo": "node scripts/record-demo.mjs",
+    "benchmark": "node --import tsx scripts/benchmark.mjs",
+    "check:ui": "node scripts/ui-check.mjs",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,css,json}' 'scripts/*.mjs' 'tests/**/*.ts' '*.json' '*.md' 'docs/**/*.md' '.github/workflows/*.yml' 'index.html' '*.ts' 'bin/*.mjs' 'benchmarks/*.json'",
+    "verify:reference": "node --import tsx scripts/verify-reference.mjs",
+    "prepare": "npm run build",
+    "check:package": "node scripts/verify-package.mjs"
+  },
+  "keywords": [
+    "gtfs",
+    "transit",
+    "isochrone",
+    "maplibre"
+  ],
+  "author": "Arthur031221",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^30.1.2",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3",
+    "fflate": "^0.8.3",
+    "maplibre-gl": "^6.13.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "bin": {
+    "reachbloom": "bin/reachbloom.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur031221/Reachbloom.git"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

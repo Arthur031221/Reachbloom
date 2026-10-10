@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-10-10T22:37:42.052Z",
+  "feed": "BART GTFS bundled at public/data/bart.zip",
+  "method": "Counts are produced from the same local parser used by the app. Active trips use calendar and calendar_dates on 2026-08-24. Reach uses Origin A at 37.7764,-122.4167, 08:00, a 45 minute horizon and four rides.",
+  "measurements": {
+    "validStops": 287,
+    "routes": 14,
+    "usableTrips": 4417,
+    "activeTripsOnDemoDate": 1021,
+    "reachableStops": 61,
+    "parseMilliseconds": 555,
+    "routingMilliseconds": 243,
+    "compressedZipBytes": 892312
+  },
+  "warnings": []
+}

@@ -1,0 +1,41 @@
+{
+  "method": "Round scan in TypeScript versus an independent event search reading the original GTFS CSV in Python. Same walking limits, calendar, transfer and ride constraints. Six fixed BART queries, tolerance 0.000001 minutes. This checks these schedules, not operator accuracy or arbitrary feeds.",
+  "cases": [
+    {
+      "date": "2026-08-24",
+      "origin": [-122.4167, 37.7764],
+      "departureSeconds": 28800,
+      "comparedStops": 61
+    },
+    {
+      "date": "2026-08-24",
+      "origin": [-122.2711, 37.8044],
+      "departureSeconds": 30600,
+      "comparedStops": 78
+    },
+    {
+      "date": "2026-08-24",
+      "origin": [-122.3532, 37.9368],
+      "departureSeconds": 61200,
+      "comparedStops": 45
+    },
+    {
+      "date": "2026-08-22",
+      "origin": [-122.4167, 37.7764],
+      "departureSeconds": 28800,
+      "comparedStops": 57
+    },
+    {
+      "date": "2026-08-23",
+      "origin": [-122.2711, 37.8044],
+      "departureSeconds": 43200,
+      "comparedStops": 77
+    },
+    {
+      "date": "2026-08-25",
+      "origin": [-122.4167, 37.7764],
+      "departureSeconds": 600,
+      "comparedStops": 49
+    }
+  ]
+}
